@@ -1,0 +1,71 @@
+﻿<Window x:Class="SemaphoreThreads.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SemaphoreThreads"
+        mc:Ignorable="d"
+        
+        Title="Semaphore Threads"
+        Height="500"
+        Width="900"
+        FontSize="16"
+        FontWeight="SemiBold">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="0">
+
+            <ListBox x:Name="WorkingLB" 
+                     Width="250"
+                     Margin="20 40"/>
+            
+            <ListBox x:Name="WaitingLB" 
+                     Width="250"
+                     Margin="20 40"/>
+            
+            <ListBox x:Name="CreatedLB" 
+                     Width="250"
+                     Margin="20 40"/>
+
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1">
+
+            <Label Width="200"
+                   Content="Semaphore Place Count:"
+                   Margin="20 30"/>
+            
+            <Label Width="100"
+                   Margin="20 30"
+                   Content="{Binding SPCount, UpdateSourceTrigger=PropertyChanged}"
+                   x:Name="CountLbl"/>
+
+            <Button Content="+"
+                    Width="20"
+                    Height="20"
+                    Click="Button_Click_1"/>
+            
+            <Button Content="-" 
+                    Width="20"
+                    Height="20"
+                    Click="Button_Click"/>
+
+
+            <Button x:Name="CreateNewThreadBtn"
+                    Width="100"
+                    Height="30"
+                    Margin="20"
+                    Content="Create"
+                    Click="CreateNewThreadBtn_Click"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>
