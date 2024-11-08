@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreThreads", "SemaphoreThreads\SemaphoreThreads.csproj", "{51E7DCB2-3663-4998-9292-DD8AF86E9617}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadManagerSemaphore", "ThreadManagerSemaphore\ThreadManagerSemaphore.csproj", "{16D926E9-0D31-48F7-850C-6EEAE1745914}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51E7DCB2-3663-4998-9292-DD8AF86E9617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51E7DCB2-3663-4998-9292-DD8AF86E9617}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51E7DCB2-3663-4998-9292-DD8AF86E9617}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51E7DCB2-3663-4998-9292-DD8AF86E9617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D926E9-0D31-48F7-850C-6EEAE1745914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D926E9-0D31-48F7-850C-6EEAE1745914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D926E9-0D31-48F7-850C-6EEAE1745914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D926E9-0D31-48F7-850C-6EEAE1745914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
